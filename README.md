@@ -15,12 +15,12 @@ Package Manager
 * Mongoose
 -----------
 
-Starting application
+# Starting application
 ----------------------
 if you don't have yarn
 Click to expand!
 
-## 1) Install Yarn
+## Install Yarn
  > https://classic.yarnpkg.com/en/docs/install/#windows-stable
 
   
