@@ -16,12 +16,13 @@ Package Manager
 -----------
 
 # Starting application
-----------------------
-if you don't have yarn
-Click to expand!
-
-## Install Yarn
+<details> 
+  <sumary>if you don't have yarn</sumary>
+  ## Install Yarn
  > https://classic.yarnpkg.com/en/docs/install/#windows-stable
+</details>
+
+
 
   
  
