@@ -18,8 +18,9 @@ Package Manager
 # Starting application
 <details> 
   <sumary>if you don't have yarn</sumary>
+  
   ## Install Yarn
- > https://classic.yarnpkg.com/en/docs/install/#windows-stable
+   https://classic.yarnpkg.com/en/docs/install/#windows-stable
 </details>
 
 
