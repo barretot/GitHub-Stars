@@ -16,17 +16,9 @@ Package Manager
 -----------
 
 # Starting application
-<details> 
-  <sumary>if you don't have yarn</sumary>
-  
-  ## Install Yarn
-   https://classic.yarnpkg.com/en/docs/install/#windows-stable
-</details>
+  1) Install Yarn
+ > https://classic.yarnpkg.com/en/docs/install/#windows-stable
 
-
-
-  
- 
   2) Generating node_modules
  > $ yarn
   
