@@ -18,8 +18,12 @@ Package Manager
 Starting application
 ----------------------
 if you don't have yarn
-  1) Install Yarn
+Click to expand!
+
+## 1) Install Yarn
  > https://classic.yarnpkg.com/en/docs/install/#windows-stable
+
+  
  
   2) Generating node_modules
  > $ yarn
