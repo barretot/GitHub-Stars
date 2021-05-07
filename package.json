@@ -1,5 +1,5 @@
 {
-  "name": "tags-github",
+  "name": "github-stars",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -10,7 +10,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "pg": "^8.6.0",
-    "pg-hstore": "^2.3.3",
     "sequelize": "^6.6.2"
   },
   "devDependencies": {
