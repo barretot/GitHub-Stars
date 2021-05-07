@@ -13,9 +13,9 @@ Package Manager
 
  Dependencies
  ---------------------
-* sequelize https://www.npmjs.com/package/sequelize
-* express https://www.npmjs.com/package/express
-* pg https://www.npmjs.com/package/pg
+* sequelize - https://www.npmjs.com/package/sequelize
+* express - https://www.npmjs.com/package/express
+* pg - https://www.npmjs.com/package/pg
 -----------
 
 Dev Dependencies
