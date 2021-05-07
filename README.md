@@ -1,4 +1,4 @@
-# Tags Github
+# Github Stars
 It aims to search for dev repositories, where you can add a label or tag to a repository so that it can be found later.
 
 Package Manager
