@@ -8,12 +8,25 @@ Package Manager
 
  Dependencies
  ---------------------
-* Nodemon
-* Sucrase
-* Eslint
-* Prettier
-* Mongoose
+* sequelize
+* express
+* pg
+* pg-hstore
 -----------
+
+Dev Dependencies
+ ---------------------
+* eslint": "^7.25.0",
+* eslint-config-airbnb-base
+* eslint-config-prettier
+* eslint-plugin-import
+* eslint-plugin-prettier
+* nodemon
+* prettier
+* sequelize-cli
+* sucrase
+-----------
+
 
 # Starting application
   1) Install Yarn
