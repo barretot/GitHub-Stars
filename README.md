@@ -16,12 +16,11 @@ Package Manager
 * sequelize
 * express
 * pg
-* pg-hstore
 -----------
 
 Dev Dependencies
  ---------------------
-* eslint": "^7.25.0",
+* eslint
 * eslint-config-airbnb-base
 * eslint-config-prettier
 * eslint-plugin-import
