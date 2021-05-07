@@ -12,9 +12,11 @@ Package Manager
 
  Dependencies
  ---------------------
-* sequelize - https://www.npmjs.com/package/sequelize
+* mongoose - https://www.npmjs.com/package/mongoose
 * express - https://www.npmjs.com/package/express
-* pg - https://www.npmjs.com/package/pg
+* axios - https://www.npmjs.com/package/axios
+* dotenv - https://www.npmjs.com/package/dotenv
+
 -----------
 
 Dev Dependencies
@@ -26,7 +28,6 @@ Dev Dependencies
 * eslint-plugin-prettier
 * nodemon
 * prettier
-* sequelize-cli
 * sucrase
 -----------
 
