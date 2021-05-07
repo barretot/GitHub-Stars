@@ -1,13 +1,13 @@
 import mongoose from 'mongoose';
 
-const UserSchema = new mongoose.Schema({
+const RepositorySchema = new mongoose.Schema({
   github_username: String,
+  tags: [String],
   repos: [
     {
       name: String,
       description: String,
       language: String,
-      tags: String,
     },
   ],
   CreatedAt: {
@@ -16,4 +16,4 @@ const UserSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.model('User', UserSchema);
+export default mongoose.model('Repository', RepositorySchema);

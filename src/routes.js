@@ -1,9 +1,10 @@
 import { Router } from 'express';
-import UserControler from './database/app/controllers/UserController';
+import RepositoryController from './database/app/controllers/RepositoryController';
 
 const routes = Router();
 
-routes.post('/test', UserControler.store);
-routes.get('/test2', UserControler.index);
+routes.post('/api/repositorie', RepositoryController.store);
+routes.get('/api/repositories', RepositoryController.index);
+routes.delete('/api/repositorie/:id', RepositoryController.destroy);
 
 export default routes;
