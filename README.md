@@ -1,5 +1,7 @@
 # Github Stars
 It aims to search for dev repositories, where you can add a label or tag to a repository so that it can be found later.
+![pinterest_board_photo](https://user-images.githubusercontent.com/56320849/117412293-ff13cc80-aeea-11eb-8625-a4843e14d983.png)
+
 
 Package Manager
 ----------------------
