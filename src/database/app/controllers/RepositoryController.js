@@ -18,8 +18,7 @@ export default {
     if (!(await schema.isValid(request.body))) {
       // Verifica se passou pelo schema
       return response.status(400).json({
-        error:
-          'Invalid fields, check that you have entered: github_username: and tags: [] -- tags can be an empty array',
+        error: 'Invalid fields, tags can be an empty array',
       });
     }
 
@@ -52,20 +51,6 @@ export default {
         repository,
       });
     }
-
-    /* if (!(await tags.length)) {
-      return response.status(200).json({
-        Message: 'Successfully created',
-        repository,
-      });
-    } else {
-      return response.status(200).json({
-        Message: 'Successfully created',
-        github_username,
-        tags,
-        tagsFilter,
-      });
-    } */
   },
 
   async storeTags(request, response) {
@@ -84,7 +69,7 @@ export default {
       github_username: request.body.github_username,
     });
 
-    const { tags } = request.body;
+    const { tags, github_username } = request.body;
 
     const [{ repos }] = await Repository.find(userExists);
 
@@ -95,15 +80,30 @@ export default {
     }));
 
     const tagsFilter = await tags.map((elements) => {
-      return arrRepos.filter(({ language }) => language === elements);
+      return arrRepos.filter(
+        ({ name, description, language }) =>
+          name === elements || description === elements || language === elements
+      );
     });
 
-    if (userExists) {
-      return response.status(200).json({ message: 'User found', tagsFilter });
-    } else if (!userExists) {
+    if (!(await userExists)) {
       return response
         .status(400)
         .json({ error: 'User not found, register it' });
+    }
+
+    if (!((await userExists) && tags.length)) {
+      return response.status(200).json({
+        message: 'User found not filter',
+        arrRepos,
+      });
+    } else {
+      return response.status(200).json({
+        message: 'User found and filter Applied',
+        github_username,
+        tags,
+        tagsFilter,
+      });
     }
   },
 
