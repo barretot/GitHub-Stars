@@ -17,7 +17,7 @@ export default {
 
     if (!(await schema.isValid(request.body))) {
       // Verifica se passou pelo schema
-      return response.status(400).json({ error: 'Field invalid' });
+      return response.status(400).json({ error: 'Field invalid' });   
     }
 
     const { github_username, tags } = request.body;
@@ -41,7 +41,7 @@ export default {
     });
 
     console.log(tagsFilter.indexOf('Elixir'));
-
+    
     const repository = await Repository.create({
       github_username,
       tags,
