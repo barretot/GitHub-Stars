@@ -196,8 +196,15 @@ export default {
         .json({ error: 'User not found, register it' });
     }
 
+    if (!(await starFilter.length)) {
+      return response.status(400).json({
+        error: 'No repositories with stars',
+      });
+    }
+
     if (!((await userExists) && tagsFilterStar.length && tags.length)) {
       return response.status(200).json({
+        message: 'Stars!!',
         starFilter,
       });
     } else {
