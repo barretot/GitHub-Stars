@@ -9,9 +9,13 @@ const RepositorySchema = new mongoose.Schema({
   tags: [String],
   repos: [
     {
+      node_id: String,
       name: String,
       description: String,
+      html_url: String,
       language: String,
+      stargazers_count: Number,
+      watchers_count: Number,
     },
   ],
 });
