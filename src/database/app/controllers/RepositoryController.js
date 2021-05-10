@@ -6,7 +6,13 @@ export default {
   async index(request, response) {
     const repositoryIndex = await Repository.find();
 
-    return response.status(200).json({ repositoryIndex });
+    if (!repositoryIndex.length) {
+      return response.status(400).json({
+        error: 'Repositories not found, register',
+      });
+    } else {
+      return response.status(200).json({ repositoryIndex });
+    }
   },
 
   async store(request, response) {
@@ -130,8 +136,6 @@ export default {
     } else {
       return response.status(200).json({
         message: 'User found and filter Applied',
-        github_username,
-        tags,
         tagsFilter,
       });
     }
@@ -220,7 +224,7 @@ export default {
   },
 
   async destroy(request, response) {
-    await Repository.findByIdAndRemove(request.params.id);
+    await Repository.findOneAndDelete(request.params.id);
     return response.status(200).json({ Message: 'Successfully deleted' });
   },
 };
