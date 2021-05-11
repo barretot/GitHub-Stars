@@ -8,7 +8,7 @@ The server was implemented in <a href="https://nodejs.org/en/docs/">NodeJS</a> w
 This backend connects to the GitHub API for the purpose of sending and receiving requests. You can read more about the API <a href="https://docs.github.com/en/rest">here.</a>
 
 
-![logo_transparent](https://user-images.githubusercontent.com/56320849/117412467-34b8b580-aeeb-11eb-9448-624322ccc704.png)
+![logo](https://user-images.githubusercontent.com/56320849/117805402-51c4ef80-b22f-11eb-8c4d-caea71aed396.png)
 <em>Logo created in: https://hatchful.shopify.com/pt-BR/</em>
 
 
@@ -72,7 +72,7 @@ $ nodemon src/server.js --ignore __tests__
 ## Additional project information
 
 ### Code Linter
-In this project the developer used a code linter called <a href="https://www.npmjs.com/package/eslint">Eslint</a> configured with the <a href="https://www.npmjs.com/package/eslint-config-airbnb-base">Airnbnb linteres.</a> The linter settings can be found in the <a href="https://github.com/brainnco-exs/challenge-barretot/blob/master/.eslintrc.js">.eslintrc.js</a> and <a href="https://github.com/brainnco-exs/challenge-barretot/blob/master/.prettierrc">.prettierrc </a>file.
+In this project the developer used a code linter called <a href="https://www.npmjs.com/package/eslint">Eslint</a> configured with the <a href="https://www.npmjs.com/package/eslint-config-airbnb-base">Airnbnb linteres.</a> The linter settings can be found in the <a href="https://github.com/brainnco-exs/challenge-barretot/blob/master/.eslintrc.js">.eslintrc.js</a> and <a href="https://github.com/brainnco-exs/challenge-barretot/blob/master/.prettierrc">.prettierrc </a>file. The <a href="https://github.com/brainnco-exs/challenge-barretot/blob/master/.editorconfig">.editorconfig</a> file configures the project linter for use in other IDES. To better understand this read the <a href="https://editorconfig.org/"> EditorConfig documentation</a>
 
 #### Package Manager
 
