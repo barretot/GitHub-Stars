@@ -71,11 +71,14 @@ $ nodemon src/server.js --ignore __tests__
 
 ## Additional project information
 
-### Package Manager
+### Code Linter
+In this project the developer used a code linter called <a href="https://www.npmjs.com/package/eslint">Eslint</a> configured with the <a href="https://www.npmjs.com/package/eslint-config-airbnb-base">Airnbnb linteres.</a> The linter settings can be found in the <a href="https://github.com/brainnco-exs/challenge-barretot/blob/master/.eslintrc.js">.eslintrc.js</a> and <a href="https://github.com/brainnco-exs/challenge-barretot/blob/master/.prettierrc">.prettierrc </a>file.
+
+#### Package Manager
 
  * <a href="https://classic.yarnpkg.com/lang/en/">Yarn</a>  
 
-### Dependencies
+#### Dependencies
 
 * <a href="https://www.npmjs.com/package/mongoose">Mongoose</a>
 * <a href="https://www.npmjs.com/package/express">Express</a>  
@@ -84,15 +87,13 @@ $ nodemon src/server.js --ignore __tests__
 * <a href="https://www.npmjs.com/package/yup">Yup</a> 
 
 
-Dev Dependencies
- ---------------------
+#### Dev Dependencies
 * <a href="https://www.npmjs.com/package/eslint">Eslint</a>
 * <a href="https://www.npmjs.com/package/eslint-config-airbnb-base">Eslint-config-airbnb-base</a>
 * <a href="https://www.npmjs.com/package/eslint-config-prettier">Eslint-config-prettier</a>
 * <a href="https://www.npmjs.com/package/eslint-plugin-prettier">Eslint-plugin-prettier</a>
 * <a href="https://www.npmjs.com/package/nodemon">Nodemon</a>
 * <a href="https://www.npmjs.com/package/prettier">Prettier</a>
------------
 
 
 
