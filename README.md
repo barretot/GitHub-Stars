@@ -6,8 +6,8 @@ The server was implemented in NodeJS with the JavaScript language, express frame
 ![logo_transparent](https://user-images.githubusercontent.com/56320849/117412467-34b8b580-aeeb-11eb-9448-624322ccc704.png)
 <em>Logo created in: https://hatchful.shopify.com/pt-BR/</em>
 
-<h2>Integração com a API do GitHub <h2>
-  This backend connects to the GitHub API for the purpose of sending and receiving requests. You can read more about the API <a href="https://docs.github.com/en/rest">here.</a>
+<h2>Integration with the GitHub API <h2>
+This backend connects to the GitHub API for the purpose of sending and receiving requests. You can read more about the API <a href="https://docs.github.com/en/rest">here.</a>
 
 
 
