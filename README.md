@@ -32,7 +32,7 @@ $ npm install
 ```
 
 ### Configuring Database
-The default database used by the project is <a href="https://docs.mongodb.com/">MongoDB</a>, using a service called <a href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a> where clusters are created where all the data is saved in the cloud.
+The default database used by the project is <a href="https://docs.mongodb.com/">MongoDB</a>, using a service called <a href="https://www.mongodb.com/cloud/atlas">MongoDB Atlas</a> where clusters are created and all the data is saved in the cloud.
 
 The database configuration was created with environment variables, so you need to quote all these variables to the server
 
