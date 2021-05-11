@@ -129,7 +129,7 @@ module.exports = {
 
     // Verifica se o usuario existe e se foi aplicado alguma tag
     if (!((await userExists) && tags.length)) {
-      return response.status(400).json({
+      return response.status(200).json({
         message: 'User found not filter tags',
         arrRepos,
       });
