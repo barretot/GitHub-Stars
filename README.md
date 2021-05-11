@@ -97,6 +97,7 @@ In this project the developer used a code linter called <a href="https://www.npm
 * <a href="https://www.npmjs.com/package/eslint-plugin-prettier">Eslint-plugin-prettier</a>
 * <a href="https://www.npmjs.com/package/nodemon">Nodemon</a>
 * <a href="https://www.npmjs.com/package/prettier">Prettier</a>
+* <a href="https://www.npmjs.com/package/jest">Jest</a>
 
 
 
