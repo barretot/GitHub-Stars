@@ -1,8 +1,8 @@
-import Repository from '../model/Repository';
-import axios from 'axios';
-import * as Yup from 'yup';
+const axios = require('axios');
+const Yup = require('yup');
+const Repository = require('../models/Repository');
 
-export default {
+module.exports = {
   async index(request, response) {
     const repositoryIndex = await Repository.find();
 
@@ -10,9 +10,8 @@ export default {
       return response.status(400).json({
         error: 'Repositories not found, register',
       });
-    } else {
-      return response.status(200).json({ repositoryIndex });
     }
+    return response.status(200).json({ repositoryIndex });
   },
 
   async store(request, response) {
@@ -24,18 +23,19 @@ export default {
     if (!(await schema.isValid(request.body))) {
       // Verifica se passou pelo schema
       return response.status(400).json({
-        error: 'Invalid fields, tags can be an empty array',
+        error: 'Invalid fields',
       });
     }
 
     const userExists = await Repository.findOne({
-      github_username: github_username,
+      github_username,
     });
     if (userExists) {
       return response.status(400).json({
         error: 'User already exists you can create tags for this user',
       });
-    } else if (!userExists) {
+    }
+    if (!userExists) {
       // Consumindo API do github
       const apiResponse = await axios.get(
         `https://api.github.com/users/${github_username}/repos`
@@ -89,7 +89,7 @@ export default {
       github_username: request.body.github_username,
     });
 
-    const { tags, github_username } = request.body;
+    const { tags } = request.body;
 
     const [{ repos }] = await Repository.find(userExists);
 
@@ -113,12 +113,12 @@ export default {
       })
     );
 
-    const tagsFilter = await tags.map((elements) => {
-      return arrRepos.filter(
+    const tagsFilter = await tags.map((elements) =>
+      arrRepos.filter(
         ({ name, description, language }) =>
           name === elements || description === elements || language === elements
-      );
-    });
+      )
+    );
 
     // Verifica se o usuario existe
     if (!(await userExists)) {
@@ -133,12 +133,11 @@ export default {
         message: 'User found not filter tags',
         arrRepos,
       });
-    } else {
-      return response.status(200).json({
-        message: 'User found and filter Applied',
-        tagsFilter,
-      });
     }
+    return response.status(200).json({
+      message: 'User found and filter Applied',
+      tagsFilter,
+    });
   },
 
   async getRepoStars(request, response) {
@@ -186,12 +185,12 @@ export default {
         stargazers_count > 0 || watchers_count > 0
     );
 
-    const tagsFilterStar = await tags.map((elements) => {
-      return starFilter.filter(
+    const tagsFilterStar = await tags.map((elements) =>
+      starFilter.filter(
         ({ name, description, language }) =>
           name === elements || description === elements || language === elements
-      );
-    });
+      )
+    );
 
     // Verifica se o usuario existe
     if (!(await userExists)) {
@@ -211,12 +210,11 @@ export default {
         message: 'Stars!!',
         starFilter,
       });
-    } else {
-      return response.status(200).json({
-        message: 'Stars!!',
-        tagsFilterStar,
-      });
     }
+    return response.status(200).json({
+      message: 'Stars!!',
+      tagsFilterStar,
+    });
 
     /* return response.status(200).json({
       starFilter,

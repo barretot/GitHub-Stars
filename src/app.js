@@ -1,11 +1,12 @@
-import express from 'express';
-import routes from './routes';
+const express = require('express');
 
-import './database/config/database';
+const routes = require('./routes');
+
+require('./database/config/database');
 
 const app = express();
 
 app.use(express.json());
 app.use(routes);
 
-export default app;
+module.exports = app;
