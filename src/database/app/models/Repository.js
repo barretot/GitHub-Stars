@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const RepositorySchema = new mongoose.Schema({
   CreatedAt: {
@@ -20,4 +20,4 @@ const RepositorySchema = new mongoose.Schema({
   ],
 });
 
-export default mongoose.model('Repository', RepositorySchema);
+module.exports = mongoose.model('Repository', RepositorySchema);

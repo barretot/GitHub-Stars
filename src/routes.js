@@ -1,13 +1,15 @@
-import { Router } from 'express';
-import RepositoryController from './database/app/controllers/RepositoryController';
+const { Router } = require('express');
+
+const RepositoryController = require('./database/app/controllers/RepositoryController');
 
 const routes = Router();
 
-routes.post('/api/repositorie', RepositoryController.store);
-routes.get('/api/repositories/tags', RepositoryController.storeTags);
-routes.get('/api/repositories/stars', RepositoryController.getRepoStars);
+routes.post('/api/repositories', RepositoryController.store);
+
+routes.post('/api/repositories/tags', RepositoryController.storeTags);
+routes.post('/api/repositories/stars/tags', RepositoryController.getRepoStars);
 routes.get('/api/repositories', RepositoryController.index);
 
-routes.delete('/api/repositorie/:id', RepositoryController.destroy);
+routes.delete('/api/users/repositories/:id', RepositoryController.destroy);
 
-export default routes;
+module.exports = routes;
