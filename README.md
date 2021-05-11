@@ -68,8 +68,11 @@ $ nodemon src/server.js --ignore __tests__
 [nodemon] starting `node src/server.js`
 ```
 
+### To use the API correctly, follow the documentation
+The documentation was written in the <a href="https://www.notion.so/">Notion</a> one application and note service, <a href="https://www.notion.so/GitHub-Stars-API-486c1a77be7340df90ddb19e832a15fd">Github Stars API Doc</a>
 
-## Additional project information
+
+## Project information
 
 ### Code Linter
 In this project the developer used a code linter called <a href="https://www.npmjs.com/package/eslint">Eslint</a> configured with the <a href="https://www.npmjs.com/package/eslint-config-airbnb-base">Airnbnb linteres.</a> The linter settings can be found in the <a href="https://github.com/brainnco-exs/challenge-barretot/blob/master/.eslintrc.js">.eslintrc.js</a> and <a href="https://github.com/brainnco-exs/challenge-barretot/blob/master/.prettierrc">.prettierrc </a>file. The <a href="https://github.com/brainnco-exs/challenge-barretot/blob/master/.editorconfig">.editorconfig</a> file configures the project linter for use in other IDES. To better understand this read the <a href="https://editorconfig.org/"> EditorConfig documentation</a>
