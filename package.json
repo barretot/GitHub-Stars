@@ -4,12 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js --ignore __tests__",
-    "dev:debug": "nodemon --inspect src/server.js --ignore __tests__",
-    "test": "NODE_ENV=test jest"
-  },
-  "jest": {
-    "testEnvironment": "node"
+    "dev": "nodemon src/server.js",
+    "dev:debug": "nodemon --inspect src/server.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
