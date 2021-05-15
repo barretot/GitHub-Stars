@@ -1,7 +1,7 @@
 node_modules
-data
 .env
 .env.test
 .gitignore
 .vscode
-__tests__
+yarn.lock
+globalConfig.json
