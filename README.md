@@ -113,7 +113,7 @@ $ yarn test
 ```
 $ npm run test
 ```
-The database will create a collection called "tests to store the tests created.
+The database will create a collection called "tests" to store the tests created.
 
 If the tests were successful, the terminal should return the following information:
 ```
