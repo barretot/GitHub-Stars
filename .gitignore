@@ -1,7 +1,10 @@
 node_modules
+
 .env
 .env.test
 .gitignore
 .vscode
+
 yarn.lock
+package-lock.json
 globalConfig.json

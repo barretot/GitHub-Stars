@@ -59,6 +59,8 @@ describe('Insert a github user and their repositories with or without stars and 
 
     expect(response.status).toBe(200);
   });
+
+  // Comente este bloco de código caso queira ver a coleção de testes no MongoDB
   it('Delete Repositories.', async () => {
     const response = await request(app).delete('/api/users/repositories/:id');
 
