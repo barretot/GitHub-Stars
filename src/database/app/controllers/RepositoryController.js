@@ -8,7 +8,7 @@ module.exports = {
 
     if (!repositoryIndex.length) {
       return response.status(400).json({
-        error: 'Repositories not found, register',
+        error: 'Repositories not found, register now',
       });
     }
     return response.status(200).json({ repositoryIndex });
