@@ -40,8 +40,8 @@ The database configuration was created with environment variables, so you need t
 
 Create a file in the project root that points to the environment variables with the name **`.env`** and write the following information for the database connection:
 ```
-MONGO_USERNAME=brainnco
-MONGO_PASSWORD=brainn2021
+MONGO_USERNAME=UserDB
+MONGO_PASSWORD=user2021
 MONGO_NAME_DB=GithubStars
 ```
 ### Starting the server
@@ -86,8 +86,8 @@ The documentation was written in the <a href="https://www.notion.so/">Notion</a>
 ### Running the tests
 The tests of this project were developed using the  <a href="https://jestjs.io/">jest</a> library. The tests use environment variables so before they are run create a file at the root of your project called **`.env.test`** and enter the following information: 
 ```
-MONGO_USERNAME=brainnco
-MONGO_PASSWORD=brainn2021
+MONGO_USERNAME=UserDB
+MONGO_PASSWORD=user2021
 MONGO_NAME_DB=tests
 ```
 After creating the environment variables the tests are ready to be executed, remembering that the last test deletes the user that was inserted, so if you want to see the collection of tests in the database, delete the test that does the deletion "Delete Repositories." in the <a href="https://github.com/brainnco-exs/challenge-barretot/blob/master/__tests__/integration/user_repositories.test.js">tests file</a> 
