@@ -73,12 +73,8 @@ If you want to see in real time the data being inserted into the database you ne
 After starting the MongoDB compass application, you will see the text field written "Paste your connection string" is where you will put the following information:
 
 ```
-mongodb+srv://brainnco:brainn2021@ecommerce.ustac.mongodb.net/test
+mongodb+srv://UserDB:user2021@ecommerce.ustac.mongodb.net/test
 ```
-![image](https://user-images.githubusercontent.com/56320849/118343385-0fd1cd00-b4ff-11eb-8443-007070eeeebb.png)
-
-Click Connect and you're all set!
-
 
 ### To use the API correctly, follow the documentation
 The documentation was written in the <a href="https://www.notion.so/">Notion</a> one application and note service, <a href="https://www.notion.so/GitHub-Stars-API-486c1a77be7340df90ddb19e832a15fd">Github Stars API Doc</a>
